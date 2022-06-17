@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  margin: 1px 1px 1px 1px;
+  font-family: poppins;
+}
+
+.main-div {
+  width: 60%;
+  display: flex;
+  color: white;
+  border-radius: 50%;
+}
+
+.main-div p {
+  font-size: 12px;
+}
+
+.div-1 {
+  padding: 60px;
+  background-color: rgb(204, 99, 0);
+  text-align: left;
+  border-radius: 10px 0 0 10px;
+}
+
+.div-1 button {
+  margin-top: 50px;
+  padding: 7px 30px;
+  border-radius: 30px;
+  color: rgb(204, 99, 0);
+  background: white;
+  border: 1px solid white;
+}
+
+.div-2 {
+  background-color: rgb(3, 56, 43);
+  padding: 60px;
+  text-align: left;
+}
+
+.div-2 button {
+  margin-top: 50px;
+  padding: 7px 30px;
+  border-radius: 30px;
+  color: rgb(3, 56, 43);
+  background: white;
+  border: 1px solid white;
+}
+
+.div-3 {
+  background-color: rgb(1, 29, 22);
+  padding: 60px;
+  text-align: left;
+  border-radius: 0 10px 10px 0;
+}
+
+.div-3 button {
+  margin-top: 50px;
+  padding: 7px 30px;
+  border-radius: 30px;
+  color: rgb(1, 29, 22);
+  background: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 40em) {
+  .main-div {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .div-1 {
+    border-radius: 10px 10px 0 0px;
+  }
+  .div-3 {
+    border-radius: 0 0 10px 10px;
+  }
+}
